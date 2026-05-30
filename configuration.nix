@@ -12,6 +12,7 @@
     waybar
     kitty
     firefox
+    git
   ];
 
   programs.hyprland = {
