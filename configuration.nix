@@ -30,7 +30,7 @@
 
 
   time.timeZone = "Europe/Copenhagen";
-  console.keymap = "no";
+# console.keymap = "no";
   services.xserver.xkb = {
     layout = "no";
     variant = "";
@@ -48,7 +48,7 @@
   services.displayManager.sddm.enable=true;
   i18n.defaultLocale = "en_US.UTF-8";
 
-  nixpkgs.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
   programs.firefox.enable = true;
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
